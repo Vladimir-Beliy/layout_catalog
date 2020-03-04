@@ -58,7 +58,6 @@ body {
 .card {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0 24px 50px;
   padding: 0 14px;
   width: 200px;
   border: 1px solid #f3f3f3;
@@ -68,16 +67,16 @@ body {
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07); }
   .card__picture {
     display: block;
-    margin: 30px 5px 0;
+    margin: 30px auto 0;
     width: 160px;
     height: 134px; }
   .card__title {
-    margin-top: 45px;
+    margin: 45px 0 0;
     font-weight: 500;
     font-size: 12px;
     line-height: 15px; }
   .card__code {
-    margin-top: 5px;
+    margin: 5px 0 0;
     font-size: 11px;
     line-height: 13px;
     font-weight: 400; }
@@ -92,17 +91,6 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .card__stars {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .card__stars > div {
-      margin-right: 4px;
-      width: 15px;
-      height: 15px;
-      background: url(../images/star.svg) no-repeat center; }
-    .card__stars > div:nth-child(-n + 4) {
-      background: url(../images/star-active.svg) no-repeat center; }
   .card__review {
     font-size: 11px;
     line-height: 13px;
@@ -153,6 +141,26 @@ body {
       border: 1px solid #00acdc;
       color: #00acdc; }
 
+.stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .stars__item {
+    margin-right: 4px;
+    width: 15px;
+    height: 15px;
+    background: url(../images/star.svg) no-repeat center; }
+  .stars--1 .stars__item:nth-child(-n + 1) {
+    background: url(../images/star-active.svg) no-repeat center; }
+  .stars--2 .stars__item:nth-child(-n + 2) {
+    background: url(../images/star-active.svg) no-repeat center; }
+  .stars--3 .stars__item:nth-child(-n + 3) {
+    background: url(../images/star-active.svg) no-repeat center; }
+  .stars--4 .stars__item:nth-child(-n + 4) {
+    background: url(../images/star-active.svg) no-repeat center; }
+  .stars--5 .stars__item:nth-child(-n + 5) {
+    background: url(../images/star-active.svg) no-repeat center; }
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -171,6 +179,9 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     max-width: 992px;
-    padding-bottom: 28px; }
+    margin: 0 16px 28px; }
+
+.wrapper {
+  margin: 0 24px 50px; }
 
 /*# sourceMappingURL=main.css.map */
