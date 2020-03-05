@@ -13,13 +13,23 @@
 
   &__picture {
     display: block;
-    margin: 30px auto 0;
+    margin: 22px auto 0;
     width: 160px;
     height: 134px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 3px solid #0000;
+    border-radius: 5px;
+    transition: transform 1s linear;
+
+    &:hover {
+      transform: scale(1.2);
+      border-color: #eee;
+    }
   }
 
   &__title {
-    margin: 45px 0 0;
+    margin: 37px 0 0;
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
@@ -80,7 +90,9 @@
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-  
+    transition: color 0.2s linear,
+      background 1s ease-out;
+
     &:hover {
       background: white;
       border: 1px solid $primary-color;
