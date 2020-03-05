@@ -13,9 +13,18 @@
 
   &__picture {
     display: block;
+    box-sizing: border-box;
     margin: 30px auto 0;
     width: 160px;
     height: 134px;
+    transition: transform 1s linear;
+
+    &:hover {
+      transform: scale(calc((160 * 1.2 + 6) / 160)); 
+      /*(width * 1.2(20%) + 6(boder:3px)) / width = 20%(size) + 6px(border)*/
+      border: 3px solid #eee;
+      border-radius: 5px;
+    }
   }
 
   &__title {
@@ -80,7 +89,9 @@
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-  
+    transition: color 0.2s linear,
+      background 1s ease-out;
+
     &:hover {
       background: white;
       border: 1px solid $primary-color;
