@@ -36,8 +36,8 @@
     text-decoration: none;
     text-transform: uppercase;
     color: black;
-    -webkit-transition: color 1s ease-out;
-    transition: color 1s ease-out; }
+    -webkit-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out; }
     .menu__link:hover {
       color: #00acdc; }
     .menu__link_active {
