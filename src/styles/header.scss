@@ -32,7 +32,7 @@
     text-decoration: none;
     text-transform: uppercase;
     color: black;
-    transition: color 1s ease-out;
+    transition: color 0.2s ease-out;
 
     &:hover {
       color: $primary-color;
